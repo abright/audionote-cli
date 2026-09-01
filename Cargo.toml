@@ -1,0 +1,12 @@
+[package]
+name = "audionote-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cpal = "0.18.2"
+crossterm = "0.29.0"
+rubato = {  version = "5.0.0", features = ["fft_resampler"] }
+whisper-rs = "0.16.0"
+crossbeam-channel = "0.5"
+anyhow = "1.0"
