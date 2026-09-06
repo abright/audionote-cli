@@ -7,6 +7,8 @@ Accuracy seems quite good if you speak clearly to it in a quiet room - I haven't
 
 Those would be next steps if turning this from a weekend experiment project into a genuinely useful tool.
 
+See also: [audionote](https://ghithub.com/abright/audionote) where I'm building a desktop app around the audio pipeline I've built here.
+
 ## Basic architecture & how it works
 Audio recording is continuous but uses a simple RMS method to detect activity and buffers that to send to a separate processing thread after detecting a period of silence.
 The processing thread resamples the incoming audio buffer and feeds it to Whisper for transcription. That output is then sent to the main thread for display.
